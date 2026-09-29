@@ -1,0 +1,452 @@
+﻿==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| ALL FLEET VEHICLES IN INVENTORY                                                           |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| Veh. ID   | Type        | Make         | Model          | Year | Daily Rate  | Status      |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CAR-101   | Car         | Maruti       | Swift ZXi      | 2023 | Rs. 1400.00 | Available   |
+| CAR-102   | Car         | Toyota       | Innova Crysta  | 2024 | Rs. 2800.00 | Available   |
+| CAR-103   | Car         | Tata         | Nexon EV       | 2024 | Rs. 2200.00 | Available   |
+| CAR-104   | Car         | Hyundai      | Creta SX       | 2023 | Rs. 2000.00 | Rented      |
+| BIKE-201  | Motorcycle  | Royal Enfield | Classic 350    | 2023 | Rs. 1100.00 | Available   |
+| BIKE-202  | Motorcycle  | Yamaha       | YZF R15 V4     | 2024 | Rs. 950.00  | Available   |
+| BIKE-203  | Motorcycle  | Honda        | Activa 6G      | 2023 | Rs. 500.00  | Available   |
+| TRK-301   | Truck       | Tata         | Ace Gold (Chota Hathi) | 2022 | Rs. 1600.00 | Available   |
+| TRK-302   | Truck       | Mahindra     | Bolero Maxi Truck | 2023 | Rs. 2100.00 | Available   |
+| TRK-303   | Truck       | BharatBenz   | 1217R Medium Duty | 2021 | Rs. 4500.00 | Available   |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CURRENTLY AVAILABLE VEHICLES (READY FOR RENT)                                             |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| Veh. ID   | Type        | Make         | Model          | Year | Daily Rate  | Status      |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CAR-101   | Car         | Maruti       | Swift ZXi      | 2023 | Rs. 1400.00 | Available   |
+| CAR-102   | Car         | Toyota       | Innova Crysta  | 2024 | Rs. 2800.00 | Available   |
+| CAR-103   | Car         | Tata         | Nexon EV       | 2024 | Rs. 2200.00 | Available   |
+| BIKE-201  | Motorcycle  | Royal Enfield | Classic 350    | 2023 | Rs. 1100.00 | Available   |
+| BIKE-202  | Motorcycle  | Yamaha       | YZF R15 V4     | 2024 | Rs. 950.00  | Available   |
+| BIKE-203  | Motorcycle  | Honda        | Activa 6G      | 2023 | Rs. 500.00  | Available   |
+| TRK-301   | Truck       | Tata         | Ace Gold (Chota Hathi) | 2022 | Rs. 1600.00 | Available   |
+| TRK-302   | Truck       | Mahindra     | Bolero Maxi Truck | 2023 | Rs. 2100.00 | Available   |
+| TRK-303   | Truck       | BharatBenz   | 1217R Medium Duty | 2021 | Rs. 4500.00 | Available   |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+  Total Available: 9 / 10
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+--- SEARCH VEHICLES (Demonstrates Method Overloading) ---
+  1. Search by Keyword (ID, Make, or Model)
+  2. Search by Vehicle Category & Daily Budget
+  Select search method (1-2):   Enter search keyword (e.g. Innova, Swift, Royal, TRK): 
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| SEARCH RESULTS (1 matches found)                                                          |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| Veh. ID   | Type        | Make         | Model          | Year | Daily Rate  | Status      |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CAR-102   | Car         | Toyota       | Innova Crysta  | 2024 | Rs. 2800.00 | Available   |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+--- REGISTER NEW CUSTOMER ---
+  Enter full name:   Enter 10-digit mobile number:   Enter driving license number (e.g. KA04202300123):   Membership Tier: 1. REGULAR (Default) | 2. VIP (Loyalty) | 3. CORPORATE
+  Select membership (1-3): 
+  [OK] Customer Registered Successfully!
+  Assigned Customer ID : CUST-1004
+  Registered Name      : Vikramaditya Rao
+  Membership Tier      : VIP
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+--- RENT A VEHICLE ---
+
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CURRENTLY AVAILABLE VEHICLES (READY FOR RENT)                                             |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| Veh. ID   | Type        | Make         | Model          | Year | Daily Rate  | Status      |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CAR-101   | Car         | Maruti       | Swift ZXi      | 2023 | Rs. 1400.00 | Available   |
+| CAR-102   | Car         | Toyota       | Innova Crysta  | 2024 | Rs. 2800.00 | Available   |
+| CAR-103   | Car         | Tata         | Nexon EV       | 2024 | Rs. 2200.00 | Available   |
+| BIKE-201  | Motorcycle  | Royal Enfield | Classic 350    | 2023 | Rs. 1100.00 | Available   |
+| BIKE-202  | Motorcycle  | Yamaha       | YZF R15 V4     | 2024 | Rs. 950.00  | Available   |
+| BIKE-203  | Motorcycle  | Honda        | Activa 6G      | 2023 | Rs. 500.00  | Available   |
+| TRK-301   | Truck       | Tata         | Ace Gold (Chota Hathi) | 2022 | Rs. 1600.00 | Available   |
+| TRK-302   | Truck       | Mahindra     | Bolero Maxi Truck | 2023 | Rs. 2100.00 | Available   |
+| TRK-303   | Truck       | BharatBenz   | 1217R Medium Duty | 2021 | Rs. 4500.00 | Available   |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+  Total Available: 9 / 10
+
+  Enter Vehicle ID to rent (e.g. CAR-101): 
+  Vehicle Selected: [Car] CAR-101 - Maruti Swift ZXi (2023)
+  Vehicle ID   : CAR-101
+  Type         : Car
+  Make & Model : Maruti Swift ZXi (2023)
+  Base Rate    : Rs. 1400.00 / day
+  Status       : AVAILABLE
+  Seating      : 5 Passengers
+  Fuel Type    : Petrol
+  AC Equipped  : Yes (Rs. 150/day surcharge)
+
+  Available Customer IDs:
+
++------------+----------------------+---------------+----------------+------------+---------+
+| Cust ID    | Customer Name        | Phone Number  | License Number | Membership | Rentals |
++------------+----------------------+---------------+----------------+------------+---------+
+| CUST-1001  | Rahul Sharma         | 9876543210    | KA03202100456  | VIP        | 0       |
+| CUST-1002  | Priya Nair           | 9123456780    | KA04202200789  | REGULAR    | 0       |
+| CUST-1003  | Infosys Corp Logistics | 9845098450    | KA01201900112  | CORPORATE  | 0       |
+| CUST-1004  | Vikramaditya Rao     | 9876543210    | KA03202300789  | VIP        | 0       |
++------------+----------------------+---------------+----------------+------------+---------+
+  Total Registered Customers: 4
+  Enter Customer ID (or enter 'NEW' to register):   Enter rental duration in days (1-365): 
+  [OK] Rental Agreement Created Successfully!
+
+=======================================================================
+               CITYDRIVE VEHICLE RENTALS & LOGISTICS                  
+               REVA University Java Programming Mini-Project           
+-----------------------------------------------------------------------
+  Invoice Number  : RENT-2002             Date Issued : 28-Sept-2026
+  Rental Status   : ACTIVE / ON RENT      Return Date : 03-Oct-2026 (Expected)
+-----------------------------------------------------------------------
+  [CUSTOMER DETAILS]
+  Customer ID     : CUST-1004             Name        : Vikramaditya Rao
+  Contact Phone   : 9876543210            License No  : KA03202300789
+  Membership      : VIP                   Rentals Done: 0
+-----------------------------------------------------------------------
+  [VEHICLE DETAILS]
+  Vehicle ID      : CAR-101               Category    : Car
+  Model & Make    : Maruti Swift ZXi (2023)
+  Base Daily Rate : Rs. 1400.00 / day
+-----------------------------------------------------------------------
+  [BILLING & PAYMENT BREAKDOWN]
+  Agreed Duration          : 5 Days
+  Gross Rental Subtotal    : Rs.    7750.00
+  Discount Applied (10.0%) : -Rs.    775.00
+  GST Tax (CGST+SGST 5.0%): +Rs.    348.75
+  .....................................................................
+  Net Rental Charges       : Rs.    7323.75
+  Refundable Security Dep. : Rs.    2000.00 (Hold)
+  TOTAL PAYABLE TODAY      : Rs.    7323.75
+  ROUNDED CASH TOTAL       : Rs. 7,323
+=======================================================================
+  Thank you for choosing CityDrive Rentals! Safe Journey & Drive Safe! 
+  Developed by: AVULU LOKESH (SRN: R24SA007) - REVA University         
+=======================================================================
+
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+--- CALCULATE RENTAL CHARGES & DISCOUNT QUOTE ---
+
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| ALL FLEET VEHICLES IN INVENTORY                                                           |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| Veh. ID   | Type        | Make         | Model          | Year | Daily Rate  | Status      |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+| CAR-101   | Car         | Maruti       | Swift ZXi      | 2023 | Rs. 1400.00 | Rented      |
+| CAR-102   | Car         | Toyota       | Innova Crysta  | 2024 | Rs. 2800.00 | Available   |
+| CAR-103   | Car         | Tata         | Nexon EV       | 2024 | Rs. 2200.00 | Available   |
+| CAR-104   | Car         | Hyundai      | Creta SX       | 2023 | Rs. 2000.00 | Rented      |
+| BIKE-201  | Motorcycle  | Royal Enfield | Classic 350    | 2023 | Rs. 1100.00 | Available   |
+| BIKE-202  | Motorcycle  | Yamaha       | YZF R15 V4     | 2024 | Rs. 950.00  | Available   |
+| BIKE-203  | Motorcycle  | Honda        | Activa 6G      | 2023 | Rs. 500.00  | Available   |
+| TRK-301   | Truck       | Tata         | Ace Gold (Chota Hathi) | 2022 | Rs. 1600.00 | Available   |
+| TRK-302   | Truck       | Mahindra     | Bolero Maxi Truck | 2023 | Rs. 2100.00 | Available   |
+| TRK-303   | Truck       | BharatBenz   | 1217R Medium Duty | 2021 | Rs. 4500.00 | Available   |
++-----------+-------------+--------------+----------------+------+-------------+-------------+
+
+  Enter Vehicle ID for quote:   Enter prospective rental days:   Customer Category: 1. REGULAR | 2. VIP | 3. CORPORATE
+  Select category (1-3): 
+  =======================================================
+               ESTIMATED RENTAL CHARGES QUOTE            
+  =======================================================
+  Vehicle Selected    : Toyota Innova Crysta (Car)
+  Base Daily Rate     : Rs. 2800.00 / day
+  Rental Duration     : 7 Days
+  -------------------------------------------------------
+  Gross Rental Cost   : Rs. 22400.00
+  Discount Calculated : -Rs. 3360.00 (Based on duration & VIP tier)
+  GST (5%)            : +Rs. 952.00
+  -------------------------------------------------------
+  Estimated Net Total : Rs. 19992.00
+  =======================================================
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+--- RETURN A VEHICLE ---
+
++------------+-----------+--------------+-----------------+------+------------+----------+
+| ACTIVE RENTAL CONTRACTS (VEHICLES ON THE ROAD)                                         |
++------------+-----------+--------------+-----------------+------+------------+----------+
+| Rental ID  | Veh. ID   | Cust. ID     | Customer Name   | Days | Total Net  | Status   |
++------------+-----------+--------------+-----------------+------+------------+----------+
+| RENT-2001  | CAR-104   | CUST-1002    | Priya Nair      | 3    | Rs. 6433.88  | Active   |
+| RENT-2002  | CAR-101   | CUST-1004    | Vikramaditya Rao | 5    | Rs. 7323.75  | Active   |
++------------+-----------+--------------+-----------------+------+------------+----------+
+  Total Records Displayed: 2
+
+  Enter Rental ID or Vehicle ID to return:   Enter actual total days the vehicle was kept: 
+  [OK] Vehicle Successfully Returned & Inspected!
+
+=======================================================================
+               CITYDRIVE VEHICLE RENTALS & LOGISTICS                  
+               REVA University Java Programming Mini-Project           
+-----------------------------------------------------------------------
+  Invoice Number  : RENT-2001             Date Issued : 28-Sept-2026
+  Rental Status   : COMPLETED / RETURNED  Return Date : 28-Sept-2026
+-----------------------------------------------------------------------
+  [CUSTOMER DETAILS]
+  Customer ID     : CUST-1002             Name        : Priya Nair
+  Contact Phone   : 9123456780            License No  : KA04202200789
+  Membership      : REGULAR               Rentals Done: 1
+-----------------------------------------------------------------------
+  [VEHICLE DETAILS]
+  Vehicle ID      : CAR-104               Category    : Car
+  Model & Make    : Hyundai Creta SX (2023)
+  Base Daily Rate : Rs. 2000.00 / day
+-----------------------------------------------------------------------
+  [BILLING & PAYMENT BREAKDOWN]
+  Agreed Duration          : 3 Days
+  Gross Rental Subtotal    : Rs.    6450.00
+  Discount Applied ( 5.0%) : -Rs.    322.50
+  GST Tax (CGST+SGST 5.0%): +Rs.    306.38
+  .....................................................................
+  Net Rental Charges       : Rs.    6433.88
+  Refundable Security Dep. : Rs.    2000.00 (Hold)
+  .....................................................................
+  Late Return Penalty (1 d): +Rs.    500.00 (Rs. 500.00/day)
+  TOTAL SETTLEMENT AMOUNT  : Rs.    6933.88
+  ROUNDED CASH TOTAL       : Rs. 6,933
+=======================================================================
+  Thank you for choosing CityDrive Rentals! Safe Journey & Drive Safe! 
+  Developed by: AVULU LOKESH (SRN: R24SA007) - REVA University         
+=======================================================================
+
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+  Rental Records Filter:
+   1. View All Rental Records (History)
+   2. View Only Active Rentals (Currently On Road)
+  Select filter (1-2): 
++------------+-----------+--------------+-----------------+------+------------+----------+
+| ALL RENTAL HISTORY & INVOICE RECORDS                                                   |
++------------+-----------+--------------+-----------------+------+------------+----------+
+| Rental ID  | Veh. ID   | Cust. ID     | Customer Name   | Days | Total Net  | Status   |
++------------+-----------+--------------+-----------------+------+------------+----------+
+| RENT-2001  | CAR-104   | CUST-1002    | Priya Nair      | 3    | Rs. 6933.88  | Returned |
+| RENT-2002  | CAR-101   | CUST-1004    | Vikramaditya Rao | 5    | Rs. 7323.75  | Active   |
++------------+-----------+--------------+-----------------+------+------------+----------+
+  Total Records Displayed: 2
+
+Press [Enter] to return to the main menu...==================================================================================
+            CITYDRIVE VEHICLE RENTAL MANAGEMENT SYSTEM - REVA UNIVERSITY          
+----------------------------------------------------------------------------------
+  Student Name : AVULU LOKESH        | SRN     : R24SA007                         
+  Degree       : B.Sc. (BSTCs) - V   | Subject : Java Programming (Practical)    
+  Institution  : REVA University     | Project : Vehicle Rental OOP Mini-Project  
+==================================================================================
+
+  MAIN NAVIGATION MENU:
+  --------------------------------------------------
+   1. View All Fleet Vehicles
+   2. View Available Vehicles (Ready for Rent)
+   3. Search Vehicles (by Keyword or Type & Budget)
+   4. Register New Customer
+   5. Rent a Vehicle (Create Agreement)
+   6. Return a Vehicle (Finalize Settlement & Bill)
+   7. Calculate Rental Quote & Discount Preview
+   8. View Registered Customers
+   9. View Rental History & Active Invoices
+  10. View Fleet Analytics & Financial Summary
+  11. Viva OOP Concepts Reference Guide
+  12. Exit Application
+  --------------------------------------------------
+  Select an option (1-12): 
+=======================================================================
+  Thank you for using the CityDrive Vehicle Rental Management System! 
+  Designed and implemented by AVULU LOKESH (SRN: R24SA007).           
+  REVA University - Department of Computer Science & Applications     
+=======================================================================
+
